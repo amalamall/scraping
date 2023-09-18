@@ -1,4 +1,3 @@
-// pages/index.js
 import React from 'react';
 import { Box, Container, Heading } from '@chakra-ui/react';
 import BlogList from '../../components/BlogList';

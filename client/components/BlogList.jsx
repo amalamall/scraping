@@ -1,4 +1,3 @@
-// components/BlogList.js
 import React from 'react';
 import Link from 'next/link';
 import { Box, Heading, Text, Stack } from '@chakra-ui/react';

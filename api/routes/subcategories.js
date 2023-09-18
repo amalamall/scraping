@@ -1,4 +1,3 @@
-// src/routes/ProductsRoutes.js
 const express = require('express');
 const router = express.Router();
 const { getSubcategories } = require('../controller/subcategories');

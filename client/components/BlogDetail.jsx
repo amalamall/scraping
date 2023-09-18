@@ -1,4 +1,3 @@
-// components/BlogDetail.js
 import React from 'react';
 import { Box, Heading, Text, Container } from '@chakra-ui/react';
 

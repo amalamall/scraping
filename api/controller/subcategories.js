@@ -1,7 +1,6 @@
 
 const Subcategory = require("../models/subcategory")
 
-// Create a new Product item
 exports.getSubcategories = async (req, res) => {
   try {
 

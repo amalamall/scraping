@@ -1,4 +1,3 @@
-// pages/[id].js
 import React from 'react';
 import { useRouter } from 'next/router';
 import { Container, Spinner } from '@chakra-ui/react';
