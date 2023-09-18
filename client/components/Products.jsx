@@ -9,8 +9,9 @@ import {
   Text,
   FormControl,
   FormLabel,
+  Grid, GridItem
 } from "@chakra-ui/react";
-const SERVER_URL =  "http://localhost:5000/api"
+const SERVER_URL = "http://localhost:5000/api"
 
 function CategorySubcategorySelector({ setData }) {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -50,13 +51,11 @@ function CategorySubcategorySelector({ setData }) {
   const handleSubCategoryChange = async (event) => {
     const subcategory = event.target.value;
     setSelectedSubcategory(subcategory);
-    console.log(subcategory);
     try {
       const response = await fetch(`${SERVER_URL}/products/${subcategory}`);
       if (response.ok) {
         const productsData = await response.json();
         setData(productsData.products);
-        console.log(productsData.products);
       } else {
         console.error(
           "Error fetching subcategories:",
@@ -77,7 +76,7 @@ function CategorySubcategorySelector({ setData }) {
           onChange={handleCategoryChange}
           placeholder="Select a category"
         >
-          {categories.map((category) => (
+          {categories?.map((category) => (
             <option key={category._id} value={category._id}>
               {category.name}
             </option>
@@ -93,7 +92,7 @@ function CategorySubcategorySelector({ setData }) {
             onChange={handleSubCategoryChange}
             placeholder="Select a subcategory"
           >
-            {subcategories.map((subcategory) => (
+            {subcategories?.map((subcategory) => (
               <option key={subcategory._id} value={subcategory._id}>
                 {subcategory.name}
               </option>
@@ -134,13 +133,14 @@ export default function Products() {
           </Center>
         </section>
         <section id="#category">
-          <div className="row">
-            {data.map((item) => (
-              <div key={item._id} className="col-md-4">
-                {<ProductSimple {...item} />}
-              </div>
+          <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap={4}>
+            {data?.map((item) => (
+              <GridItem key={item._id} height="100%">
+                <ProductSimple {...item} fontSize={{ base: 'sm', md: 'md' }} lineHeight={{ base: '1.2', md: '1.4' }} />
+              </GridItem>
             ))}
-          </div>
+          </Grid>
+
         </section>
       </Container>
     </Box>

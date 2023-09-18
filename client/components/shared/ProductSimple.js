@@ -21,17 +21,18 @@ export default function ProductSimple({ name, price, image, _id }) {
   const router = useRouter();
   return (
     <Center py={6}>
-    <Box
+      <Box
         role={"group"}
         p={6}
         maxW={"330px"}
         w={"full"}
-        h={600}
+        h={600} // 
         bg={useColorModeValue("white", "gray.800")}
         boxShadow={"2xl"}
         rounded={"lg"}
         pos={"relative"}
         zIndex={1}
+        overflow="hidden"
       >
         <Box
           rounded={"lg"}
@@ -59,9 +60,9 @@ export default function ProductSimple({ name, price, image, _id }) {
             <Text fontWeight={800} fontSize={"xl"}>
               ${price}
             </Text>
-            <Button  fontSize={"sm"} onClick={() => handleAddProduct()} fontWeight={600} colorScheme='pink' variant='outline'>
-            Add To Cart
-          </Button>
+            <Button fontSize={"sm"} onClick={() => handleAddProduct()} fontWeight={600} colorScheme='pink' variant='outline'>
+              Add To Cart
+            </Button>
           </Stack>
         </Stack>
       </Box>

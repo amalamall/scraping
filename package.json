@@ -13,5 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.1"
+  },
+  "dependencies": {
+    "nextjs-reduxtoolkit-chkraui": "file:client",
+    "test_crawlo": "file:api"
   }
 }
