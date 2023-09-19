@@ -1,0 +1,17 @@
+{
+  "name": "crawlo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:express": "cd api && node index.js",
+    "start:next": "cd client && npm run dev",            
+    "start": "concurrently \"npm run start:express\" \"npm run start:next\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}

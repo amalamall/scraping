@@ -1,0 +1,41 @@
+{
+  "name": "nextjs-reduxtoolkit-chkraui",
+  "version": "1.0",
+  "description": "NextJS-ReduxToolkit-ChkraUI",
+  "license": "Beatnik Technology",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build & next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "11.1.5",
+    "@emotion/styled": "11.1.5",
+    "@reduxjs/toolkit": "^1.9.3",
+    "axios": "1.3.4",
+    "color-thief-react": "^2.1.0",
+    "date-fns": "2.29.3",
+    "formik": "2.2.9",
+    "framer-motion": "10.1.0",
+    "localforage": "1.9.0",
+    "next": "13.2.3",
+    "next-redux-wrapper": "^8.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.3.1",
+    "react-redux": "^8.0.5",
+    "react-slick": "^0.29.0",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "swr": "2.1.0",
+    "use-async-effect": "2.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0"
+  }
+}
