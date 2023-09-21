@@ -13,7 +13,6 @@ This project is a web application built using Next.js, Chakra UI, Node.js, Expre
 - [Scraping Data](#scraping-data)
 - [Blogs Page](#blogs-page)
 - [Deployment](#deployment)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Getting Started
@@ -74,20 +73,6 @@ To start scraping data from jumia, follow these steps:
 ## Deployment
 
 You can access the deployed version of this application at [http://165.22.64.139/](http://165.22.64.139/).
-
-## Contributing
-
-If you would like to contribute to this project, please follow these guidelines:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature or bug fix: `git checkout -b feature-name`.
-
-3. Make your changes and commit them: `git commit -m 'Add feature'`.
-
-4. Push to your forked repository: `git push origin feature-name`.
-
-5. Create a pull request to the `main` branch of the original repository.
 
 ## License
 
