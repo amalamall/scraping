@@ -1,3 +1,4 @@
+
 # Ecommerce Scraper and Product Display
 
 This project is a web application built using Next.js, Chakra UI, Node.js, Express.js, and MongoDB. Its main functionality is to take a home page URL for an e-commerce website, scrape product data, and display those products in a simple user interface.
