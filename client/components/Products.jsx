@@ -10,7 +10,7 @@ import {
   FormControl,
   FormLabel,
 } from "@chakra-ui/react";
-const SERVER_URL = process.env.SERVER_URL
+const SERVER_URL =  "http://localhost:5000/api"
 
 function CategorySubcategorySelector({ setData }) {
   const [selectedCategory, setSelectedCategory] = useState("");

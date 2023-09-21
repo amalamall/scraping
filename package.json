@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:express": "cd api && node index.js",
-    "start:next": "cd client && npm run dev",            
+    "start:next": "cd client && npm run dev",
     "start": "concurrently \"npm run start:express\" \"npm run start:next\""
   },
   "keywords": [],

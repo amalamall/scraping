@@ -23,7 +23,7 @@ import Products from "components/Products";
 import { useDispatch } from "react-redux";
 import { addProduct } from "../../store/slices/productsSlice";
 
-const SERVER_URL = process.env.SERVER_URL
+const SERVER_URL = 'http://localhost:5000/api'
 
 export default function ProductById() {
   const [isTablet] = useMediaQuery("(min-width: 768px)");

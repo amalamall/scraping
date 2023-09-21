@@ -1,0 +1,17 @@
+version: '3'
+services:
+  client:
+    build:
+      context: ./client
+    ports:
+      - "80:3000"  # Map host port 80 to container port 3000
+    working_dir: /app/client
+    command: ["npm", "start"]
+
+  api:
+    build:
+      context: ./api
+    ports:
+      - "5000:5000"  # Map host port 5000 to container port 5000
+    working_dir: /app/api
+    command: ["npm", "start"]
